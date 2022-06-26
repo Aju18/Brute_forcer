@@ -13,16 +13,16 @@ from helper_functions import validate_args
 
 # Initialize the parser
 
-parser = argparse.ArgumentParser(description='multi-service bruteforcing tool')
+parser = argparse.ArgumentParser(description='Multi-Service Authentication Bruteforcing Tool')
 
 # Establish the accepted arguments
 
-parser.add_argument('-m', dest='_execution_mode', type=str, help='execution mode')
-parser.add_argument('-t', dest='_target_ip', type=str, help='ip address of the target')
-parser.add_argument('-p', dest='_target_port', type=str, help='port of the network service')
-parser.add_argument('-d', dest='_target_dir', type=str, help='sub directory path requiring authentication')
-parser.add_argument('-U', dest='_user_list', type=str, help='path to username list')
-parser.add_argument('-P', dest='_pass_list', type=str, help='path to password list')
+parser.add_argument('-m', dest='_execution_mode', type=str, help='Execution Mode [ftp | basic | ssh]')
+parser.add_argument('-t', dest='_target_ip', type=str, help='IP address of the target (i.e. 192.168.22.100)')
+parser.add_argument('-p', dest='_target_port', type=str, help='Port of the network service (i.e. 22)')
+parser.add_argument('-d', dest='_target_dir', type=str, help='Sub-directory path requiring authentication (i.e. /manager/html)')
+parser.add_argument('-U', dest='_user_list', type=str, help='Path to username list (i.e. /root/users.txt)')
+parser.add_argument('-P', dest='_pass_list', type=str, help='Path to password list (i.e. /root/passwords.txt)')
 
 # Parse the arguments
 
