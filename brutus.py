@@ -13,7 +13,7 @@ from helper_functions import validate_args
 
 # Initialize the parser
 
-parser = argparse.ArgumentParser(description='Multi-Service Authentication Bruteforcing Tool')
+parser = argparse.ArgumentParser(description='Authentication Bruteforcing Tool for Network Services')
 
 # Establish the accepted arguments
 
