@@ -96,7 +96,7 @@ with open(user_list, "r") as working_users:
 
 				else:
 
-					print("[-] Invalid execution mode! Brutus currently supports [ftp | basic | ssh]")
+					print("[-] Invalid execution mode!")
 
 					exit()
 
