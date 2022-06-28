@@ -21,7 +21,7 @@ parser = argparse.ArgumentParser(description='Authentication Bruteforcing Tool f
 parser.add_argument('-m', dest='_execution_mode', type=str, help='Execution Mode [ftp | basic | ssh | imap]')
 parser.add_argument('-t', dest='_target_ip', type=str, help='IP address of the target (i.e. 192.168.22.100)')
 parser.add_argument('-p', dest='_target_port', type=str, help='Port of the network service (i.e. 22)')
-parser.add_argument('-d', dest='_target_dir', type=str, help='Sub-directory path requiring authentication (i.e. /manager/html)')
+parser.add_argument('-d', dest='_target_dir', type=str, help='Sub-directory path requiring BASIC authentication (i.e. /manager/html)')
 parser.add_argument('-U', dest='_user_list', type=str, help='Path to username list (i.e. /root/users.txt)')
 parser.add_argument('-P', dest='_pass_list', type=str, help='Path to password list (i.e. /root/passwords.txt)')
 
