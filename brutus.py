@@ -8,6 +8,7 @@ from ssh_module import ssh_login
 from http_basic_module import http_login
 from ftp_module import ftp_login
 from helper_functions import validate_args
+from imap_module import imap_login
 
 # Basic argument parser to allow for usage with the cli
 
@@ -17,7 +18,7 @@ parser = argparse.ArgumentParser(description='Authentication Bruteforcing Tool f
 
 # Establish the accepted arguments
 
-parser.add_argument('-m', dest='_execution_mode', type=str, help='Execution Mode [ftp | basic | ssh]')
+parser.add_argument('-m', dest='_execution_mode', type=str, help='Execution Mode [ftp | basic | ssh | imap]')
 parser.add_argument('-t', dest='_target_ip', type=str, help='IP address of the target (i.e. 192.168.22.100)')
 parser.add_argument('-p', dest='_target_port', type=str, help='Port of the network service (i.e. 22)')
 parser.add_argument('-d', dest='_target_dir', type=str, help='Sub-directory path requiring authentication (i.e. /manager/html)')
@@ -91,6 +92,12 @@ with open(user_list, "r") as working_users:
 				elif execution_mode == 'ftp':
 
 					if ftp_login(target_ip, target_port, user, password) == True:
+
+						success = True
+
+				elif execution_mode == 'imap':
+
+					if imap_login(target_ip, target_port, user, password) == True:
 
 						success = True
 

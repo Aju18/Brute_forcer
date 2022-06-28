@@ -25,6 +25,7 @@
     <Compile Include="ftp_module.py" />
     <Compile Include="helper_functions.py" />
     <Compile Include="http_basic_module.py" />
+    <Compile Include="imap_module.py" />
     <Compile Include="ssh_module.py" />
   </ItemGroup>
   <ItemGroup>
