@@ -5,7 +5,7 @@
 
 Welcome to the brutus project repo! Brutus is a fast and simple way to bruteforce authentication on network services such as SSH, FTP, IMAP, and more.
 
-If you have any suggestions, feedback, issues, etc... feel free to reach out or create an issue/pull request. 
+If you have any suggestions, feedback, issues, etc... feel free to reach out or create an issue or pull request. 
 
 ____
 
@@ -26,7 +26,7 @@ ____
 
 ### Features
 
-The tool currently supports:
+The tool currently supports the following services:
 
 - [x] HTTP BASIC
 - [x] SSH
@@ -63,7 +63,6 @@ options:
   -d _TARGET_DIR      Sub-directory path requiring BASIC authentication (i.e. /manager/html)
   -U _USER_LIST       Path to username list (i.e. /root/users.txt)
   -P _PASS_LIST       Path to password list (i.e. /
-
 ```
 
 Tomcat Example: ```python3 brutus.py -m basic -t 192.168.100.200 -p 8080 -d /manager/html -U usernames.txt -P passwords.txt```
