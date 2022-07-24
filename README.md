@@ -80,7 +80,7 @@ ____
 
 ### Troubleshooting
 
-If you encounter any issues, please raise it here in this repository.
+If you encounter any issues, please raise them here in this repository.
 
 ____
 
@@ -100,13 +100,13 @@ ____
 
 ### Disclaimer
 
- This project is only for educational purposes. Any kind of bad behavior conducted with this project is the user's own responsibility. I hereby forfeit responsible for any illegal actions.
+ This project is only for educational purposes. Any kind of bad behavior conducted with this project is the user's own responsibility. I hereby forfeit responsiblity for any illegal actions.
  
 ____
 
 ### Acknowledgement 
 
- This project was partially guided by TCM's [Python 101 course](https://academy.tcm-sec.com/p/python-101-for-hackers) and was overhauled to incorporate some new ideas I had and new skills I had learned.
+ This project was born from a capstone excercise in TCM's [Python 101 course](https://academy.tcm-sec.com/p/python-101-for-hackers) but was overhauled to incorporate some new ideas I had and new skills I had learned.
 
 ____
 
